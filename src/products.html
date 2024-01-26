@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrewCrew</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+<style>
+  html{
+  scroll-behavior: smooth;
+}
+</style>
+</head>
+<body>
+  <section class="max-h-screen relative h-screen bg-white ">
+    <!-- Navbar Start -->
+    <div class="navbar h-24 pt-4  container mx-auto border-none  
+    ">
+      <div class="navbar-start">
+        <div class="dropdown fixed z-50">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 text-black bg-white shadow-lg rounded-box w-52">
+            <li ><a href="index.html">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">B.C Blog</a></li>
+
+          </ul>
+
+
+
+
+        </div>
+        <a class="btn btn-ghost absolute mt-1 w-[20%] left-[40%] md:relative md:w-auto md:left-0 text-[#8B2323] text-xl">
+          <img src="../src/img/brew-crew-logo.png" class="w-full h-16" alt="">
+        </a>
+        
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu text-black font-semibold menu-horizontal px-1">
+          <li><a  href="index.html">HOME</a></li>
+          <li class="text-[#8B2323]"><a href="#">PRODUCTS</a></li>
+          <li><a href="services.html">SERVICES</a></li>
+          <li><a href="about.html">ABOUT US</a></li>
+          <li><a href="#">B.C BLOG</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a class="btn btn-ghost text-[#8B2323] shadow-md mr-5 md:mr-0">Contact Us</a>
+      </div>
+    </div>
+    <!-- Navbar End -->
+
+<!-- Section 2 -->
+<section class="px-2 py-32 bg-white md:px-0">
+    <div class="container items-center max-w-6xl px-8 mx-auto xl:px-5">
+      <div class="flex flex-wrap items-center sm:-mx-3">
+        <div class="w-full md:w-1/2 md:px-3">
+          <div class="w-full pb-6 space-y-6 sm:max-w-md lg:max-w-lg md:space-y-4 lg:space-y-8 xl:space-y-9 sm:pr-5 lg:pr-0 md:pb-0">
+            <h1 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl">
+              <span class="block xl:inline">BrewCrew</span>
+              <span class="block text-[#8B2323] xl:inline">Staff</span>
+            </h1>
+            <p class="mx-auto text-base text-gray-500 sm:max-w-md lg:text-xl md:max-w-3xl">Our Staff are all passionate in the art of making your refreshment dreams come true. They’ll deliver service with a smile and make your drink to order, so check out our barista lista menu and make your choice.</p>
+            <div class="relative flex flex-col sm:flex-row sm:space-x-4">
+              <a href="#menu" id="s1btn1" class="flex items-center w-full px-6 py-3 mb-3 text-lg text-white bg-[#8B2323] rounded-md sm:mb-0 hover:bg-[#8B2323]/80 sm:w-auto">
+                View Our Menu
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 ml-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+              <a href="#coffee"  class="flex items-center px-6 py-3 text-gray-500 bg-gray-100 rounded-md hover:bg-gray-200 hover:text-gray-600">
+               What's for you <span id="s1btn2span" class="ml-2"> ?</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2">
+          <div class="w-full h-auto overflow-hidden rounded-md shadow-xl sm:rounded-xl">
+              <img src="https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+      <section class="text-gray-700 body-font bg-white  ">
+        <div class="container px-5 py-24 mx-auto " id="coffee">
+          <div class="flex flex-col text-center w-full mb-20">
+            <h2 class="text-xl text-[#8B2323] tracking-widest font-medium title-font mb-1">Descisions ?</h2>
+            <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900">Which <span class="border-b-4 border-[#8B2323]">Coffee</span> is for you</h1>
+          </div>
+          <div class="flex relative flex-wrap -m-4 z-10">
+            <div  id="s2bgdiv" class="absolute w-full h-[90%] lg:block hidden bg-[#f9d9ab] rounded-3xl top-[35%] z-0"></div>
+            <div class="p-4 md:w-1/3 z-10">
+              <div class="flex rounded-lg h-full bg-white  shadow-lg p-8 flex-col">
+                <div class="flex items-center mb-3">
+                  <div id="s2icondiv" class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-[#8B2323] text-white flex-shrink-0">
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                  <h2 class="text-gray-900 text-lg title-font font-medium" id="s2icondiv">The Classics</h2>
+                </div>
+                <div class="flex-grow">
+                  <p class="leading-relaxed text-base">From the classic Americano to the stylish Latte, we offer a wide range of coffee that you've come to kwow over the years.</p>
+                
+                </div>
+              </div>
+            </div>
+            <div class="p-4 md:w-1/3 z-10">
+              <div class="flex rounded-lg h-full bg-white  shadow-lg p-8 flex-col">
+                <div class="flex items-center mb-3">
+                  <div id="s2icondiv" class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-[#8B2323] text-white flex-shrink-0">
+                    <i class="fa-solid fa-face-smile-beam"></i>
+                  </div>
+                  <h2 class="text-gray-900 text-lg title-font font-medium" id="s2icondiv">The Sweet Tooth</h2>
+                </div>
+                <div class="flex-grow">
+                  <p class="leading-relaxed text-base">If the regular cups of coffee just aren't cutting it, we offer a range of flavour and sweet coffee's like our ever so popular Mocha.</p>
+              
+                </div>
+              </div>
+            </div>
+            <div class="p-4 md:w-1/3 z-10">
+              <div class="flex rounded-lg h-full bg-white  shadow-lg p-8 flex-col">
+                <div class="flex items-center mb-3">
+                  <div id="s2icondiv" class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-[#8B2323] text-white flex-shrink-0">
+                    <i class="fa-solid fa-mug-hot"></i>
+                  </div>
+                  <h2 class="text-gray-900 text-lg title-font font-medium" id="s2icondiv">The 0% Cup</h2>
+                </div>
+                <div class="flex-grow">
+                  <p class="leading-relaxed text-base">If you're looking for that delicious taste of coffee without the caffine, we offer a tasty cup of coffee minus the caffine.</p>
+            
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="text-gray-700 body-font  bg-white shadow-xl" id="menu">
+        <h1 class="py-12 text-4xl font-bold text-center ">Our Menu</h1>
+        <div class="container px-5 mx-auto flex flex-wrap ">
+          <div class="lg:w-1/2 w-full mb-10 lg:mb-0  rounded-tl-lg rounded-bl-lg rounded-tr-lg overflow-hidden">
+            <img alt="feature" class="object-cover object-center h-full w-full" src="https://images.pexels.com/photos/324028/pexels-photo-324028.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+          </div>
+          <div class="flex  flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center bg-[#f7ebda] rounded-lg px-10">
+            <!-- Expresso -->
+            <div class="flex flex-col mb-10 lg:mb-4 lg:items-start items-center">
+              <div class="w-auto flex mt-10">
+                <div class="w-12 my-auto h-12 inline-flex items-center justify-center rounded-full bg-white shadow-lg text-[#F9D9AA]">
+                  <!-- SVG for Espresso -->
+                  <i class="fa-solid fa-circle-notch"></i>
+                </div>
+                <h2 class="text-gray-900 my-auto text-lg title-font font-medium mb-3 ml-5 border-b-2 border-[#8B2323]/50">Espresso</h2>
+              </div>
+              <div class="flex-grow mt-3 ml-0 lg:ml-0">
+                <p class="leading-relaxed text-base">Short, sweet full-flavoured shot of extracted coffee, served in a 4oz cup.</p>
+              </div>
+            </div>
+            
+            <!-- Ristretto -->
+            <div class="flex flex-col mb-10 lg:mb-4 lg:items-start items-center">
+              <div class="w-auto flex">
+                <div class="w-12 my-auto h-12 inline-flex items-center justify-center rounded-full bg-white shadow-lg text-[#F9D9AA]">
+                  <!-- SVG for Ristretto -->
+                  <i class="fa-solid fa-circle-notch"></i>
+                </div>
+                <h2 class="text-gray-900 my-auto text-lg title-font font-medium mb-3 ml-5 border-b-2 border-[#8B2323]/50">Ristretto</h2>
+              </div>
+              <div class="flex-grow mt-3 ml-0 lg:ml-0">
+                <p class="leading-relaxed text-base">A mini espresso - shorter, more intense full-bodied extraction of coffee, served in a 4oz cup.</p>
+              </div>
+            </div>
+            
+            <!-- Macchiato -->
+            <div class="flex flex-col mb-10 lg:mb-4 lg:items-start items-center">
+              <div class="w-auto flex">
+                <div class="w-12 my-auto h-12 inline-flex items-center justify-center rounded-full bg-white shadow-lg text-[#F9D9AA]">
+                  <!-- SVG for Macchiato -->
+                  <i class="fa-solid fa-circle-notch"></i>
+                </div>
+                <h2 class="text-gray-900 my-auto text-lg title-font font-medium mb-3 ml-5 border-b-2 border-[#8B2323]/50">Macchiato</h2>
+              </div>
+              <div class="flex-grow mt-3 ml-0 lg:ml-0">
+                <p class="leading-relaxed text-base">Sumptuous dollop of foamed milk, nestling on top of an espresso. Served in a 4oz cup.</p>
+              </div>
+            </div>
+            
+            <!-- Caffe Mocha -->
+            <div class="flex  flex-col mb-10 lg:mb-20 lg:items-start items-center">
+              <div class="w-auto flex ">
+                <div class="w-12 my-auto h-12 inline-flex items-center justify-center rounded-full bg-white shadow-lg text-[#F9D9AA]">
+                  <!-- SVG for Caffe Mocha -->
+                  <i class="fa-solid fa-circle-notch"></i>
+                </div>
+                <h2 class="text-gray-900 my-auto text-lg title-font font-medium mb-3 ml-5 border-b-2 border-[#8B2323]/50">Caffe Mocha</h2>
+              </div>
+              <div class="flex-grow mt-3 ml-0 lg:ml-0">
+                <p class="leading-relaxed text-base">Latte plus chocolate equals heaven in a cup. Served in a 12oz cup.</p>
+              </div>
+            </div>
+          </div>
+          <!-- here -->
+        </div>
+      </section>
+      <section class="text-gray-700 body-font  bg-white ">
+        <div class="container px-5 mx-auto flex flex-wrap">
+        
+            <div class="flex  flex-col flex-wrap  lg:py-6 px-10 lg:w-1/2 lg:pr-12 lg:text-left text-center bg-[#f7ebda] rounded-lg">
+                <!-- Expresso -->
+                <div class="flex  flex-col mb-10 lg:mb-4 lg:items-start items-center">
+                  <div class="w-auto flex mt-10">
+                    <div class="w-12 my-auto h-12 inline-flex items-center justify-center rounded-full bg-white shadow-lg text-[#F9D9AA]">
+                      <!-- SVG for Espresso -->
+                      <i class="fa-solid fa-circle-notch"></i>
+                    </div>
+                    <h2 class="text-gray-900 my-auto text-lg title-font font-medium mb-3 ml-5 border-b-2 border-[#8B2323]/50">Americano</h2>
+                  </div>
+                  <div class="flex-grow mt-3 ml-0 lg:ml-0">
+                    <p class="leading-relaxed text-base">Espresso diluted with hot water. Cold or hot milk is optional. Served in a 12 oz cup.
+
+                    </p>
+                  </div>
+                </div>
+                
+                <!-- Ristretto -->
+                <div class="flex flex-col mb-10 lg:mb-4 lg:items-start items-center">
+                  <div class="w-auto flex">
+                    <div class="w-12 my-auto h-12 inline-flex items-center justify-center rounded-full bg-white shadow-lg text-[#F9D9AA]">
+                      <!-- SVG for Ristretto -->
+                      <i class="fa-solid fa-circle-notch"></i>
+                    </div>
+                    <h2 class="text-gray-900 my-auto text-lg title-font font-medium mb-3 ml-5 border-b-2 border-[#8B2323]/50">Caffe Latte</h2>
+                  </div>
+                  <div class="flex-grow mt-3 ml-0 lg:ml-0">
+                    <p class="leading-relaxed text-base">Espresso blended with creamy steamed milk. Served in a 12oz cup.</p>
+                  </div>
+                </div>
+                
+                <!-- Macchiato -->
+                <div class="flex flex-col mb-10 lg:mb-4 lg:items-start items-center">
+                  <div class="w-auto flex">
+                    <div class="w-12 my-auto h-12 inline-flex items-center justify-center rounded-full bg-white shadow-lg text-[#F9D9AA]">
+                      <!-- SVG for Macchiato -->
+                      <i class="fa-solid fa-circle-notch"></i>
+                    </div>
+                    <h2 class="text-gray-900 my-auto text-lg title-font font-medium mb-3 ml-5 border-b-2 border-[#8B2323]/50">Cappuccino</h2>
+                  </div>
+                  <div class="flex-grow mt-3 ml-0 lg:ml-0">
+                    <p class="leading-relaxed text-base">Espresso with a layer of shiny, creamy foamed milk nestling on top, topped up with steamed milk with an optional dusting of chocolate. Served in a12oz cup.</p>
+                  </div>
+                </div>
+                
+                <!-- Caffe Mocha -->
+                <div class="flex  flex-col mb-10  lg:items-start items-center">
+                  <div class="w-auto flex ">
+                    <div class="w-12 my-auto h-12 inline-flex items-center justify-center rounded-full bg-white shadow-lg text-[#F9D9AA]">
+                      <!-- SVG for Caffe Mocha -->
+                      <i class="fa-solid fa-circle-notch"></i>
+                    </div>
+                    <h2 class="text-gray-900 my-auto text-lg title-font font-medium mb-3 ml-5 border-b-2 border-[#8B2323]/50">Decaff</h2>
+                  </div>
+                  <div class="flex-grow mt-3 ml-0 lg:ml-0">
+                    <p class="leading-relaxed text-base">Sure no faff - Columbian decaffeinated.</p>
+                  </div>
+                </div>
+              </div>
+          <div class="lg:w-1/2 lg:block hidden mb-10 lg:mb-0 rounded-tr-lg rounded-bl-lg rounded-br-lg overflow-hidden">
+            <img alt="feature" class="object-cover object-center h-full w-full" src="https://images.pexels.com/photos/894695/pexels-photo-894695.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+          </div>
+        </div>
+      </section>
+      <section class="text-gray-700 body-font  bg-white ">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block w-8 h-8 text-gray-400 mb-8" viewBox="0 0 975.036 975.036">
+              <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+            </svg>
+            <p class="leading-relaxed text-lg">Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware. Man bun next level coloring book skateboard four loko knausgaard. Kitsch keffiyeh master cleanse direct trade indigo juice before they sold out gentrify plaid gastropub normcore XOXO 90's pickled cindigo jean shorts. Slow-carb next level shoindigoitch ethical authentic, yr scenester sriracha forage franzen organic drinking vinegar.</p>
+            <span class="inline-block h-1 w-10 rounded bg-[#8B2323] mt-8 mb-6"></span>
+            <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">HOLDEN CAULFIELD</h2>
+            <p class="text-gray-500">Senior Product Designer</p>
+          </div>
+        </div>
+      </section>
+      <script>
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.from("#s1btn2span", {
+            scrollTrigger: {
+                trigger: "#s1btn2span",
+                start: "top 80%",
+                end: "bottom 20%",
+                toggleActions: "play none none reverse",
+                markers: false
+            },
+           
+            
+opacity:0,
+            x:-10,
+            delay:1,
+            duration: 1.5
+        });
+        gsap.from("#s1btn1", {
+            scrollTrigger: {
+                trigger: "#s1btn1",
+                start: "top 80%",
+                end: "bottom 20%",
+                toggleActions: "play none none reverse",
+                markers: false
+            },
+           
+            
+            backgroundColor:"#F3F4F6",
+            color:"#6A7280",
+            delay:.8,
+            duration: 1.5
+        });
+
+        gsap.from("#s2bgdiv", {
+      scrollTrigger: {
+          trigger: "#s2bgdiv",
+          start: "top 80%",
+          end: "bottom 20%",
+          toggleActions: "play none none reverse",
+          markers: false
+      },
+
+      y: -90,
+      duration: 1.2
+  });
+  gsap.from("#s2icondiv", {
+      scrollTrigger: {
+          trigger: "#s2icondiv",
+          start: "top 80%",
+          end: "bottom 20%",
+          toggleActions: "play none none reverse",
+          markers: false
+      },
+
+      opacity: 0,  // Start the animation from opacity 0
+      x:15,
+        duration: 0.5,  // Duration of each individual animation
+        stagger: 0.3,
+  });
+
+        </script>
+<!-- This is the footer section -->
+<footer class="footer footer-center p-10 pt-10 bg-[#F3F1F2] text-base-content rounded">
+  <nav class="grid grid-flow-col gap-4">
+    <a class="link link-hover">About us</a>
+    <a class="link link-hover">Contact</a>
+    <a class="link link-hover">Jobs</a>
+    <a class="link link-hover">Press kit</a>
+  </nav> 
+  <nav>
+    <div class="grid grid-flow-col gap-4">
+      <a><i class="fa-brands fa-whatsapp  text-2xl"></i></a>
+      <a><i class="fa-brands fa-youtube text-2xl"></i></a>
+      <a><i class="fa-brands fa-facebook  text-2xl"></i></a>
+    </div>
+  </nav> 
+  <aside>
+    <p>Copyright © 2024 - brewcrewcafe.ie</p>
+    <p>Design - James Bellew</p>
+  </aside>
+
+</footer>
+</body>
+</html>

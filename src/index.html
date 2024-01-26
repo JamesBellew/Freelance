@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrewCrew</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- GSAP and ScrollTrigger -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+<!-- 
+<style>
+  #example {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+</style> -->
+
+    <style>
+      html {
+  scroll-behavior: smooth;
+}
+
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+        .overlay {
+            background-color: rgba(232, 232, 232, 0.65);
+        }
+    </style>
+</head>
+<body>
+  <section class="max-h-screen relative h-screen bg-[#f7ebda] ">
+    <!-- Navbar Start -->
+    <div class="navbar h-24 pt-4  container mx-auto border-none  
+    ">
+      <div class="navbar-start">
+        <div class="dropdown fixed z-50">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 text-black bg-white shadow-lg rounded-box w-52">
+            <li ><a class="text-[#8B2323]" href="#">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">B.C Blog</a></li>
+
+          </ul>
+
+
+
+
+        </div>
+        <a class="btn btn-ghost absolute mt-1 w-[20%] left-[40%] md:relative md:w-auto md:left-0 text-[#8B2323] text-xl">
+          <img src="../src/img/brew-crew-logo.png" class="w-full h-16" alt="">
+        </a>
+        
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu text-black font-semibold menu-horizontal px-1">
+          <li class="text-[#8B2323]"><a class=" ">HOME</a></li>
+          <li><a href="products.html">PRODUCTS</a></li>
+          <li><a href="services.html">SERVICES</a></li>
+          <li><a href="about.html">ABOUT US</a></li>
+          <li><a href="#">B.C BLOG</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a href="con" class="btn btn-ghost bg-white text-[#8B2323] shadow-md mr-5 md:mr-0">Contact Us</a>
+      </div>
+    </div>
+    <!-- Navbar End -->
+
+<!-- Hero Section -->
+<div class="relative bg-[#f7ebda]
+
+ bg-cover bg-center bg-no-repeat h-full py-60
+
+"
+
+>
+<!-- <div class="overlay absolute inset-0"></div> -->
+<!-- <div class="absolute bottom-[-100px] left-[-300px] z-0 rotate-90"> <img 
+  src="https://freepngdesign.com/content/uploads/images/coffee-beans-3191.png" alt=""></div> -->
+  <div class="container mx-auto flex text-center lg:text-left  justify-center items-center h-full px-6 relative z-10">
+    <div class="lg:w-2/3 w-full h-full justify-center flex-col flex items-left">
+      <h2 class="text-5xl font-bold mb-6 z-10 text-black">Welcome to the</h2>
+      <h2 class="text-[#8B2323] text-5xl font-bold" id="s1header1">BrewCrew</h2>
+      <br>
+      <br>
+      <h3 class="text-xl mb-3 text-zinc-600">We love coffee and most of all we love bringing it to you...</h3>
+      <h2 class="text-xl text-zinc-600">Hey, sit back, relax, take a cup of brew and have a look around.</h2>
+  
+      <!-- Buttons container -->
+      <div class="flex mx-auto lg:mx-0 space-y-4 mt-10 mb-32 lg:mb-10">
+          <a href="#events" class="bg-[#2F2105] w-56 font-semibold text-center rounded-md py-4 px-2 shadow-lg  tracking-wider hover:bg-[#8B2323]hover:text-blue-500 transition-all text-md  text-white">What we do</a>
+         <a href='#fleet' class=" cursor-pointer ml-10 text-[#8B2323] text-lg tracking-wide font-semibold lg:block hidden">Meet the fleet</a>
+      </div>
+  </div>
+  
+
+      <div class=" lg:w-1/3 relative hidden lg:block h-auto p-5 rounded-full  bg-[#2F2105] justify-center bg  flex-col flex items-left">
+        <div class="absolute bubbles bg-white px-10 py-2 shadow-md left-0 rounded-xl text-[#2F2105]">Cappuccino</div>
+        <div class="absolute bubbles bg-white px-10 py-2 shadow-md top-[20%] right-[-10%] rounded-xl text-[#2F2105]">Latte</div>
+        <div class="absolute bubbles bg-white px-10 shadow-md py-2 bottom-[10%] left-[-5%] rounded-xl text-[#2F2105]">Mocha<i class="fa-solid fa-heart ml-2 "></i></div>
+<img src="img/cup.png" class="p-10 mx-auto" alt="" srcset="">
+        </div>
+
+   <!-- New Section Start -->
+
+  <!-- New Section End -->
+  </div>
+  <div class="absolute h-[15%] top[85%] bottom-10   w-full py-4 ">
+    <div class="container mx-auto text-center">
+      <div class="flex justify-center space-x-4">
+        <!-- Social Icons -->
+        <div><i class="fa-brands fa-whatsapp text-base-100 text-2xl"></i></div>
+        <div><i class="fa-brands fa-twitter  text-base-100 text-2xl"></i></div>
+        <div><i class="fa-brands fa-facebook  text-base-100 text-2xl"></i></div>
+        <div><i class="fa-brands fa-linkedin  text-base-100 text-2xl"></i></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Hero Section End -->
+
+  </section>
+
+<!-- Section 3 -->
+<section class="w-full bg-white pt-7 pb-7 md:pt-20 md:pb-24">
+    <div class="box-border mt-20  p-10  mb-14 flex flex-col items-center content-center px-8 mx-auto leading-6 text-black border-0 border-gray-300 border-solid md:flex-row max-w-7xl lg:px-16">
+
+        <!-- Image -->
+        <div
+        
+        class="box-border  relative w-full max-w-md px-4 mt-5 mb-4 -ml-5 text-center bg-no-repeat bg-contain border-solid md:ml-0 md:mt-0 md:max-w-none lg:mb-0 md:w-1/2 xl:pl-10">
+            <img src="img/brew-crew-logo.png" class="p-2 mx-auto pl-6 pr-5 xl:pl-16 xl:pr-20 ">
+        </div>
+
+        <!-- Content -->
+        <div class="box-border order-first w-full text-black border-solid md:w-1/2 md:pl-10 md:order-none  mt-10" id="events">
+            <h2
+            style="color:black"
+            id="example"
+            class="m-0 text-xl font-semibold leading-tight border-0 text-[#8B2323] border-gray-300 lg:text-3xl md:text-2xl" >
+                Events
+            </h2>
+            <p class="pt-4 pb-8 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-12 xl:pr-32 lg:text-lg" >
+              Whatever your event, if you can drink coffee at it then we can bring it to you. Indoors or out. <br><br>We can help you with ...
+            </p>
+            <ul class="p-0 m-0 leading-6 border-0 border-gray-300">
+              <li class="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
+                  <span class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-[#8B2323] rounded-full">
+                      <span class="text-sm font-bold checkmark">✓</span>
+                  </span> Your Festivals
+              </li>
+              <li class="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
+                  <span class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-[#8B2323] rounded-full">
+                      <span class="text-sm font-bold checkmark">✓</span>
+                  </span> Your Corporate Events
+              </li>
+              <li class="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
+                  <span class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-[#8B2323] rounded-full">
+                      <span class="text-sm font-bold checkmark">✓</span>
+                  </span> Your Fun Day
+              </li>
+              <li class="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
+                  <span class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-[#8B2323] rounded-full">
+                      <span class="text-sm font-bold checkmark">✓</span>
+                  </span> Your Wedding
+              </li>
+          </ul>
+        </div>
+        <!-- End  Content -->
+    </div>
+    <div class="box-border   flex flex-col items-center content-center px-8 mx-auto mt-5 leading-6 text-black border-0 border-gray-300 border-solid md:mt-20 xl:mt-0 md:flex-row max-w-7xl lg:px-16">
+
+        <!-- Content -->
+        <div class="box-border w-full text-black border-solid md:w-1/2 md:pl-6 xl:pl-32">
+            <h2
+            style="color:black"
+            id="s2header2"
+             class="m-0 text-xl font-semibold leading-tight border-0 border-gray-300 lg:text-3xl md:text-2xl">
+              Barista Lista Menu
+            </h2>
+            <p class="pt-4 pb-8 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-10 lg:text-lg">
+              Our Staff are all passionate in the art of making your refreshment dreams come true.Our freshly roasted coffee is a blend of premium quality, <br><br>ethically sourced 100% from ...
+            </p>
+            <ul class="p-0 m-0 leading-6 border-0 border-gray-300">
+                <li class="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
+                    <span class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-[#8B2323] rounded-full"><span class="text-sm font-bold">✓</span></span> Arabica beans
+                </li>
+                <li class="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
+                    <span class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-[#8B2323] rounded-full"><span class="text-sm font-bold">✓</span></span> Costa Rica
+                </li>
+                <li class="box-border relative py-1 pl-0 text-left text-gray-500 border-solid">
+                    <span class="inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-[#8B2323] rounded-full"><span class="text-sm font-bold">✓</span></span> India
+                </li>
+            </ul>
+        </div>
+        <!-- End  Content -->
+
+        <!-- Image -->
+        <div class="box-border relative w-full max-w-md px-4 mt-10 mb-4 text-center bg-no-repeat bg-contain border-solid md:mt-0 md:max-w-none lg:mb-0 md:w-1/2">
+            <img src="img/cup.png" class="pl-4 mx-auto  sm:pr-10 xl:pl-10 lg:pr-32">
+        </div>
+    </div>
+</section>
+<section class="w-full py-8 bg-white ">
+  <div class="container mx-auto" id="fleet">
+    <h1 class="text-center text-4xl text-black py-8" >Meet The <span id="s3header1" class="text-[#8B2323] border-b-2 border-[#8B2323]">Fleet</span></h1>
+ 
+  
+    <div class="carousel carousel-center w-full p-4 space-x-4  mb-10 h-1/3 rounded-box">
+      
+      <div class="carousel-item relative">
+        <img src="https://images.pexels.com/photos/2396220/pexels-photo-2396220.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="rounded-box h-full w-80" />
+        <!-- Text Overlay -->
+        <div class="absolute bottom-0 text-center left-0 right-0 bg-black bg-opacity-50 text-white p-2 rounded-b-box">
+          Mother Ship
+        </div>
+      </div> 
+    <div class="carousel-item relative">
+      <img src="https://images.pexels.com/photos/333523/pexels-photo-333523.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="rounded-box h-full w-80" />
+      <div class="absolute bottom-0 text-center left-0 right-0 bg-black bg-opacity-50 text-white p-2 rounded-b-box">
+        Bean Machine
+      </div>
+    </div> 
+    <div class="carousel-item relative">
+      <img src="https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg" class="rounded-box" />
+      <div class="absolute bottom-0 text-center left-0 right-0 bg-black bg-opacity-50 text-white p-2 rounded-b-box">
+        Coffee Cart
+      </div>
+    </div> 
+    <div class="carousel-item relative">
+      <img src="https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg" class="rounded-box" />
+      <div class="absolute bottom-0 text-center left-0 right-0 bg-black bg-opacity-50 text-white p-2 rounded-b-box">
+        Mother Ship
+      </div>
+    </div> 
+    <div class="carousel-item relative">
+      <img src="https://daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg" class="rounded-box" />
+      <div class="absolute bottom-0 text-center left-0 right-0 bg-black bg-opacity-50 text-white p-2 rounded-b-box">
+        Mother Ship
+      </div>
+    </div> 
+    <div class="carousel-item relative">
+      <img src="https://daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg" class="rounded-box" />
+      <div class="absolute bottom-0 text-center left-0 right-0 bg-black bg-opacity-50 text-white p-2 rounded-b-box">
+        Mother Ship
+      </div>
+    </div> 
+    <div class="carousel-item relative">
+      <img src="https://daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg" class="rounded-box" />
+      <div class="absolute bottom-0 text-center left-0 right-0 bg-black bg-opacity-50 text-white p-2 rounded-b-box">
+        Mother Ship
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<!-- This is the footer section -->
+<footer class="footer footer-center p-10 pt-10 bg-[#F3F1F2] text-base-content rounded">
+  <nav class="grid grid-flow-col gap-4">
+    <a class="link link-hover">About us</a>
+    <a class="link link-hover">Contact</a>
+    <a class="link link-hover">Jobs</a>
+    <a class="link link-hover">Press kit</a>
+  </nav> 
+  <nav>
+    <div class="grid grid-flow-col gap-4">
+      <a><i class="fa-brands fa-whatsapp  text-2xl"></i></a>
+      <a><i class="fa-brands fa-youtube text-2xl"></i></a>
+      <a><i class="fa-brands fa-facebook  text-2xl"></i></a>
+    </div>
+  </nav> 
+  <aside>
+    <p>Copyright © 2024 - brewcrewcafe.ie</p>
+    <p>Design - James Bellew</p>
+  </aside>
+
+</footer>
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.from("#s2header2", {
+      scrollTrigger: {
+          trigger: "#s2header2",
+          start: "top 80%",
+          end: "bottom 20%",
+          toggleActions: "play none none reverse",
+          markers: false
+      },
+      opacity: 0,
+      y: 50,
+      duration: 1.5
+  });
+  gsap.from("#example", {
+      scrollTrigger: {
+          trigger: "#example",
+          start: "top 80%",
+          end: "bottom 20%",
+          toggleActions: "play none none reverse",
+          markers: false
+      },
+      opacity: 0,
+      y: 50,
+      duration: 1.5
+  });
+
+  gsap.from("#s3header1", {
+      scrollTrigger: {
+          trigger: "#s3header1",
+          start: "top 80%",
+          end: "bottom 20%",
+          toggleActions: "play none none reverse",
+          markers: false
+      },
+      color: "black",
+      borderColor:"white",
+      y: 50,
+      duration: 1.5
+  });
+  gsap.from("#s1header1", {
+      scrollTrigger: {
+          trigger: "#s1header1",
+          start: "top 80%",
+          end: "bottom 20%",
+          toggleActions: "play none none reverse",
+          markers: false
+      },
+      color: "black",
+      borderColor:"white",
+      y: -50,
+      duration: 1.5
+  });
+  gsap.from(".bubbles", {
+    scrollTrigger: {
+        trigger: ".bubbles",
+        start: "top 80%",
+        end: "bottom 20%", // define only one 'end' point
+        toggleActions: "play reverse play reverse", // play onEnter, reverse onLeave, play onEnterBack, reverse onLeaveBack
+        markers: false
+    },
+    opacity: 0,
+    y: 50,
+    stagger:0.3,
+    duration: 1.5
+});
+
+
+    gsap.from(".checkmark", {
+        scrollTrigger: {
+            trigger: ".p-0", // The UL element is the trigger for the animation
+            start: "top 70%",  // Animation will start when the top of the UL hits the middle of the viewport
+            toggleActions: "play none none none" ,
+            markers:false // Play the animation once when the trigger is hit
+        },
+        opacity: 0,  // Start the animation from opacity 0
+        duration: 0.5,  // Duration of each individual animation
+        stagger: 0.2,  // Time delay between the start of each animation
+    });
+ 
+</script>
+
+</body>
+</html>

@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrewCrew</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  html{
+  scroll-behavior: smooth;
+}
+</style>
+    <style>
+      .timeline {
+    position: relative;
+    left: 0; /* Align timeline to the left */
+}
+
+.timeline-box {
+    width: 100%; /* Make the text box take the full width */
+    word-wrap: break-word; /* Ensure the text wraps and doesn't overflow */
+}
+
+        .landing-wrapper {
+    display:table;
+    width:100%;
+    background: linear-gradient( rgb(255, 255, 255), rgba(255, 255, 255, 0.728) ), url('https://images.pexels.com/photos/2396220/pexels-photo-2396220.jpeg');
+    background-position:center top;
+    height:100%;
+  
+}
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.847);
+        }
+        .overlay {
+            background-color: #e8e8e8a6;
+        }
+    </style>
+</head>
+<body>
+
+
+
+    <div
+      class="relative pt-16 pb-32 flex content-center items-center justify-center border-none"
+      style="min-height: 75vh;"
+    >
+    
+      <div
+        class="absolute top-0 w-full h-full bg-center bg-cover border-none "
+        style='background-image: url("img/van.jpeg");'
+      >
+      <div class="container mx-auto">
+      <div class="navbar  w-full z-50 absolute h-24 pt-4  container mx-auto border-none  
+      ">
+        <div class="navbar-start">
+          <div class="dropdown fixed z-50">
+            <div tabindex="0" role="button" class="btn btn-ghost  lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 text-black bg-white shadow-lg rounded-box w-52">
+              <li ><a href="index.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a class="text-[#8B2323]" href="#">Services</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="#">B.C Blog</a></li>
+  
+            </ul>
+  
+  
+  
+  
+          </div>
+          <a class="btn btn-ghost absolute mt-1 w-[20%] left-[40%] md:relative md:w-auto md:left-0 text-[#8B2323] text-xl">
+            <img src="../src/img/brew-crew-logo.png" class="w-full h-16" alt="">
+          </a>
+          
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu text-black font-semibold menu-horizontal px-1">
+            <li><a href="index.html" class=" ">HOME</a></li>
+            <li><a href="products.html">PRODUCTS</a></li>
+            <li><a class="text-[#8B2323]" href="#">SERVICES</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a>B.C BLOG</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn btn-ghost bg-white text-[#8B2323] shadow-md mr-1 md:mr-0">Contact Us</a>
+        </div>
+      </div>
+    </div>
+        <span
+          id="blackOverlay"
+          class="w-full h-full absolute opacity-80 border-none bg-white"
+        ></span>
+      </div>
+      <div class="container relative mx-auto border-none">
+        <div class="items-center flex flex-wrap border-none">
+          <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center border-none">
+            <div class="lg:pr-12 pr-0">
+              <h1 class="text-black font-semibold text-5xl">
+                What we can do for you 
+              </h1>
+              <p class="mt-4 text-lg text-gray-800 font-medium">
+                We offer a wide variety of services here at the BrewCrew ranging from corporate events to sporting events, we can accomidate anythign to suit your needs.
+              </p>
+              <a href="#corp" class="btn  bg-[#8B2323] border-none text-white mt-10">Corporate Events</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+        style="height: 70px; transform: translateZ(0px);"
+      >
+        <svg
+          class="absolute bottom-0 overflow-hidden"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          version="1.1"
+          viewBox="0 0 2560 100"
+          x="0"
+          y="0"
+        >
+          <polygon
+            class="text-white border-none fill-current"
+            points="2560 0 2560 100 0 100"
+          ></polygon>
+        </svg>
+      </div>
+    </div>
+    
+    <section class="relative py-20 bg-white border-white">
+      <div
+        class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+        style="height: 80px; transform: translateZ(0px);"
+      >
+        <svg
+          class="absolute bottom-0 overflow-hidden"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          version="1.1"
+          viewBox="0 0 2560 100"
+          x="0"
+          y="0"
+        >
+          <polygon
+            class="text-white border-none fill-current"
+            points="2560 0 2560 100 0 100"
+          ></polygon>
+        </svg>
+      </div>
+      <div class="container mx-auto px-4">
+        <div class="items-center flex flex-wrap" >
+          <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
+            <img
+              alt="..."
+              class="max-w-full rounded-lg shadow-lg"
+              src="https://images.pexels.com/photos/2668498/pexels-photo-2668498.jpeg"
+            />
+          </div>
+          <div class="w-full md:w-5/12 ml-auto mr-auto px-4" id="corp">
+            <div class="md:pr-12">
+              <div
+                class="text-[#8B2323] mt-5 lg:mt-0 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-2 shadow-lg rounded-full bg-white "
+              >
+                <i class="fas fa-rocket text-xl"></i>
+              </div>
+              <h3 class="text-3xl font-semibold text-[#8B2323]" >Corporate Events</h3>
+              <p class="mt-4 text-md leading-relaxed text-gray-600">
+                We also cater for corporate events. With our fleet of catering vans and trailers we can take care of you and your clients regardless of the size of your corporate event. We have catered for everything from one hundred to fifty thousand and we always ensure excellent service and a superb product to boot.If you're in need of refreshments at your corporate event why not contact us now to see what we can do for you.
+              </p>
+
+              <ul class="list-none mt-3">
+                <li class="py-2">
+                  <div class="flex items-center">
+                    <div>
+                      <span
+                        class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-[#8B2323] shadow-lg mr-3"
+                        ><i class="fa-solid fa-quote-left"></i></span>
+                    </div>
+                    <div>
+                      <h4 class="text-gray-600">
+                      " We can provide for your staff appreciation day, product launch, customer open day, conference, corporate event, and promotional days "
+                      </h4>
+                    </div>
+                  </div>
+                </li>
+              
+                <li class="py-2">
+                  <div class="flex items-center">
+                    <div>
+                      <span
+                        class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-[#8B2323] shadow-lg mr-3"
+                        ><i class="fa-solid fa-quote-left"></i></span>
+                    </div>
+                    <div>
+                      <h4 class="text-gray-600">" We can do it indoors or outdoors, in your foyer, office, showroom, warehouse, just about anywhere you want "</h4>
+                    </div>
+                  </div>
+                </li>
+                <li class="py-2">
+                    <div class="flex items-center">
+                      <div>
+                        <span
+                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-[#8B2323] shadow-lg mr-3"
+                          ><i class="fa-solid fa-quote-left"></i></span>
+                      </div>
+                      <div>
+                        <h4 class="text-gray-600">“ Units can be branded with your logo, staff can wear your attire and a complete personal branding package is available ”</h4>
+                      </div>
+                    </div>
+                  </li>
+              </ul>
+             
+            </div>
+            <div class="w-full  flex mt-2">
+                <a  href="corporate.html" class=" btn bg-[#8B2323]  border-none text-white mx-auto text-center">Mobile corporate Events</a>
+            </div>
+             
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-white">
+
+        <div class="flex  container mx-auto flex-wrap items-center  bg-white">
+            <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
+              <div class="w-full  text-center lg:text-left">
+              <div
+                class="text-gray-600  p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-1 shadow-lg rounded-full bg-white"
+              >
+                <i class="fas text-[#8B2323]  fa-user-friends text-xl"></i>
+              </div>
+            </div>
+              <h3 class="text-3xl text-[#8B2323] text-center lg:text-left mb-2 font-semibold leading-normal">
+                Events in Ireland
+              </h3>
+              <!-- <p
+                class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700"
+              >
+              We've been taking care of people at events in Ireland for donkeys years now.
+              </p> -->
+              <p
+              href="https://www.creative-tim.com/framework/tailwind-starter-kit"
+              class="font-bold text-gray-800 mt-1 text-center lg:text-left"
+              >Our Versatility is Our Service</p
+            >
+              <!-- <p
+                class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700"
+              >
+              we'll come to you
+<br>we'll make your coffee to go<br>
+
+we'll do your milk curvaceous, slim, or even size zero, we can also do decaf, no faff
+<br>
+
+
+
+we'll even do tea (be it Lyons or posh), superb organic Fairtrade hot chocolate with no-nonsense marshmallows
+<br>
+we'll tempt you with snacks, confectionery, cold drinks & goodies.
+<br>
+we'll do it indoors or outdoors
+              </p> -->
+              <div class="py-5 container mx-auto  w-full  ">
+                <!-- component -->
+                     <div class="relative  w-full ">
+                         <div class="border-r-4 border-[#8B2323] absolute h-full top-0" ></div>
+                         <ul class="list-none m-0 p-0">
+                             <li class="mb-5  ">
+                                 <div class="flex group items-center ">
+                                     <div class="bg-gray-100  z-10 rounded-full border-4 border-[#8B2323]  h-5 w-5">
+                                         <div class="bg-[#8B2323] h-1 w-full items-center  ml-4 mt-1"></div>
+                                     </div>
+                                     <div class="flex-1 ml-4 z-10 font-medium">
+                                         <div class="order-1 space-y-2 bg-white shadow-md rounded-lg shadow-only transition-ease  w-full px-6 py-4">
+                                             <h3 class="mb-0 font-bold text-black text-2xl">What we bring to the table</h3>
+                                            
+                                             <p class=" text-md text-gray-900 w-auto">The highest quality drinks
+                                              <hr class="w-1/3 text-[#8B2323] border-[.5px] border-zinc-600/50">
+                                             <p class="text-sm font-medium leading-snug tracking-wide text-gray-600 text-opacity-100">
+                                              
+                                              we'll come to you
+                                              <br>we'll make your coffee to go<br>
+                                              
+                                              we'll do your milk curvaceous, slim, or even size zero, we can also do decaf, no faff
+                                              <br>
+                                              <br>
+                                              we'll even do tea (be it Lyons or posh), superb organic Fairtrade hot chocolate with  marshmallows
+                                              <br>
+                                              we’ll tempt you with snacks, confectionery, cold drinks & goodies.
+                                             </p>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </li>
+                             <li class="mb-5  ">
+                              <div class="flex group items-center ">
+                                  <div class="bg-gray-100  z-10 rounded-full border-4 border-[#8B2323]  h-5 w-5">
+                                      <div class="bg-[#8B2323] h-1 w-full items-center  ml-4 mt-1"></div>
+                                  </div>
+                                  <div class="flex-1 ml-4 z-10 font-medium">
+                                      <div class="order-1 space-y-2 bg-white shadow-md rounded-lg shadow-only transition-ease  w-full px-6 py-4">
+                                          <h3 class=" font-bold text-black text-2xl">We will accomodate you</h3>
+                                          <p class=" text-md text-gray-900">Hey, we'll do it your way and we'll do it brilliantly.
+                                            <hr class="w-1/3 text-[#8B2323] border-[.5px] border-zinc-600/50">
+                                          <p class="text-sm font-medium leading-snug tracking-wide text-gray-600 text-opacity-100">
+                                           We'll do it indoors or outdoors
+                                            <br>
+                                            We'll do it at your festival, your sporting event, your fun day, your corporate event, your fair day, your store opening, your wedding.
+                                          <br>
+                                           
+                                          
+                                          </p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </li>
+                         </ul>
+                     </div>
+                 </div>
+            </div>
+            <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
+              <div
+                class="relative flex flex-col min-w-0 break-words bg-[#8B2323] w-full mb-6 shadow-lg rounded-lg "
+              >
+                <img
+                  alt="..."
+                  src="img/van.jpeg"
+                  class="w-full align-middle h-96 rounded-t-lg"
+                />
+                <blockquote class="relative p-8 mb-4">
+                  <svg
+                    preserveAspectRatio="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 583 95"
+                    class="absolute left-0 w-full block"
+                    style="height: 95px; top: -94px;"
+                  >
+                    <polygon
+                      points="-30,95 583,95 583,65"
+                      class="text-[#8B2323] fill-current"
+                    ></polygon>
+                  </svg>
+                  <h4 class="text-xl font-bold text-white">
+                    Top Notch Services
+                  </h4>
+                  <p class="text-md font-light mt-2 text-zinc-100">
+                    We'll do it at your festival, your sporting event, your fun day, your corporate event, your fair day, your store opening, your wedding.
+                    hey, we'll do it your way and we'll do it brilliantly.
+                    If you need The Brew Crew at any events in Ireland then get in touch, We'll be happy to help.
+                  </p>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+<section class=" bg-white">
+  <div class="container mx-auto">
+    <br>
+    <br>
+    <br>
+    <h3 class="text-3xl text-center text-[#8B2323] mb-2 font-semibold leading-normal">
+        Mobile Coffee
+      </h3>
+      <p
+        class="text-lg font-light text-center px-5 lg:px-60 leading-relaxed mt-4 mb-4 text-gray-700"
+      >
+      Take superb barista style coffee, combine it with the versatility of different sized vans and trailers and what you get is mobile coffee, the Brew Crew way. Great coffee, great service and a friendly atmosphere.
+      </p>
+      <p
+      class="text-lg font-light text-center px-5 lg:px-60   leading-relaxed mt-4 mb-4 text-gray-700"
+    >
+    We love coffee so much we bring it to you,whether you're on the top of a mountain or in the middle of a field we'll ensure you're well looked after with our mobile coffee service.
+    </p>
+    <div class="carousel carousel-center w-full p-4 space-x-4  mb-10 h-1/3 rounded-box">
+      
+      <div class="carousel-item relative">
+        <img src="https://images.pexels.com/photos/2396220/pexels-photo-2396220.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="rounded-box h-full w-80" />
+        <!-- Text Overlay -->
+        <div class="absolute bottom-0 text-center left-0 right-0 bg-black bg-opacity-50 text-white p-2 rounded-b-box">
+          Mother Ship
+        </div>
+      </div> 
+    <div class="carousel-item relative">
+      <img src="https://images.pexels.com/photos/333523/pexels-photo-333523.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="rounded-box h-full w-80" />
+      <div class="absolute bottom-0 text-center left-0 right-0 bg-black bg-opacity-50 text-white p-2 rounded-b-box">
+        Bean Machine
+      </div>
+    </div> 
+    <div class="carousel-item relative">
+      <img src="https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg" class="rounded-box" />
+      <div class="absolute bottom-0 text-center left-0 right-0 bg-black bg-opacity-50 text-white p-2 rounded-b-box">
+        Coffee Cart
+      </div>
+    </div> 
+    <div class="carousel-item relative">
+      <img src="https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg" class="rounded-box" />
+      <div class="absolute bottom-0 text-center left-0 right-0 bg-black bg-opacity-50 text-white p-2 rounded-b-box">
+        Mother Ship
+      </div>
+    </div> 
+    <div class="carousel-item relative">
+      <img src="https://daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg" class="rounded-box" />
+      <div class="absolute bottom-0 text-center left-0 right-0 bg-black bg-opacity-50 text-white p-2 rounded-b-box">
+        Mother Ship
+      </div>
+    </div> 
+    <div class="carousel-item relative">
+      <img src="https://daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg" class="rounded-box" />
+      <div class="absolute bottom-0 text-center left-0 right-0 bg-black bg-opacity-50 text-white p-2 rounded-b-box">
+        Mother Ship
+      </div>
+    </div> 
+    <div class="carousel-item relative">
+      <img src="https://daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg" class="rounded-box" />
+      <div class="absolute bottom-0 text-center left-0 right-0 bg-black bg-opacity-50 text-white p-2 rounded-b-box">
+        Mother Ship
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+ 
+
+
+
+<!-- This is the footer section -->
+<footer class="footer footer-center p-10 pt-10 bg-[#F3F1F2] text-base-content rounded">
+  <nav class="grid grid-flow-col gap-4">
+    <a class="link link-hover">About us</a>
+    <a class="link link-hover">Contact</a>
+    <a class="link link-hover">Jobs</a>
+    <a class="link link-hover">Press kit</a>
+  </nav> 
+  <nav>
+    <div class="grid grid-flow-col gap-4">
+      <a><i class="fa-brands fa-whatsapp  text-2xl"></i></a>
+      <a><i class="fa-brands fa-youtube text-2xl"></i></a>
+      <a><i class="fa-brands fa-facebook  text-2xl"></i></a>
+    </div>
+  </nav> 
+  <aside>
+    <p>Copyright © 2024 - brewcrewcafe.ie</p>
+    <p>Design - James Bellew</p>
+  </aside>
+
+</footer>
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrewCrew</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+  
+    <style>
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+        .overlay {
+            background-color: rgba(232, 232, 232, 0.65);
+        }
+    </style>
+</head>
+<body>
+  <section class="max-h-screen relative h-screen bg-white ">
+    <!-- Navbar Start -->
+    <div class="navbar h-24 pt-4  container mx-auto border-none  
+    ">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 text-black bg-white shadow-lg rounded-box w-52">
+            <li ><a>Home</a></li>
+            <li><a>Products</a></li>
+            <li><a>Services</a></li>
+            <li><a>About Us</a></li>
+            <li><a>B.C Blog</a></li>
+
+          </ul>
+
+
+
+
+        </div>
+        <a class="btn btn-ghost absolute mt-1 w-[20%] left-[40%] md:relative md:w-auto md:left-0 text-[#8B2323] text-xl">
+          <img src="../src/img/brew-crew-logo.png" class="w-full h-16" alt="">
+        </a>
+        
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu text-black font-semibold menu-horizontal px-1">
+          <li class="text-[#8B2323]"><a class=" ">HOME</a></li>
+          <li><a>PRODUCTS</a></li>
+          <li><a>SERVICES</a></li>
+          <li><a>ABOUS US</a></li>
+          <li><a>B.C BLOG</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a class="btn btn-ghost text-[#8B2323] shadow-md mr-5 md:mr-0">Contact Us</a>
+      </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <div class="container h-auto flex my-24 mx-auto md:px-6">
+        <!-- Section: Design Block -->
+        <section class="my-auto ">
+
+          <div class="container px-6 md:px-12">
+            <div
+            sty
+              class="block rounded-lg bg-[#fefefe] 
+              
+              
+              px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]
+              
+            
+   
+               
+               md:py-16 md:px-12  backdrop-blur-[30px]">
+              <div class="flex flex-wrap">
+                <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6">
+                  <form>
+                    <div class="relative mb-6" data-te-input-wrapper-init>
+                      <input type="text"
+                        class="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-[#8B2323] data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none
+                    
+                
+                          [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                        id="exampleInput90" placeholder="Name" />
+                      <label
+                        class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-[#8B2323] peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none
+                         
+                         "
+                        for="exampleInput90">Name
+                      </label>
+                    </div>
+                    <div class="relative mb-6" data-te-input-wrapper-init>
+                      <input type="email"
+                        class="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-[#8B2323] data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none
+                         [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                        id="exampleInput91" placeholder="Email address" />
+                      <label
+                        class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-[#8B2323] peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none 
+                        
+                        "
+                        for="exampleInput91">Email address
+                      </label>
+                    </div>
+                    <div class="relative mb-6" data-te-input-wrapper-init>
+                      <textarea
+                        class="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none 
+                        
+      
+                        
+                        [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                        id="exampleFormControlTextarea1" rows="3" placeholder="Your message"></textarea>
+                      <label for="exampleFormControlTextarea1"
+                        class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-[#8B2323] peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none 
+                        
+                        ">Message</label>
+                    </div>
+                    <div class="mb-6 inline-block min-h-[1.5rem] justify-center pl-[1.5rem] md:flex">
+                      
+                    </div>
+                    <button type="button" data-te-ripple-init data-te-ripple-color="light"
+                      class="mb-6 inline-block w-full rounded  px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal bg-[#8B2323] text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] 
+                    lg:mb-0">
+                      Send
+                    </button>
+                  </form>
+                </div>
+                <div class="w-full shrink-0 grow-0 basis-auto lg:w-7/12">
+                  <div class="flex flex-wrap">
+                    <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:w-full lg:px-6 xl:w-6/12">
+                      <div class="flex items-start">
+                        <div class="shrink-0">
+                          <div class="inline-block rounded-md bg-primary-100 p-4 text-[#8B2323]">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                              stroke="currentColor" class="h-6 w-6">
+                              <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M14.25 9.75v-4.5m0 4.5h4.5m-4.5 0l6-6m-3 18c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 014.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 00-.38 1.21 12.035 12.035 0 007.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 011.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 01-2.25 2.25h-2.25z" />
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="ml-6 grow">
+                          <p class="mb-2 font-bold ">
+                            Phone Us
+                          </p>
+                          <p class="text-neutral-500 ">
+                            087 4827836
+                          </p>
+                          <p class="text-neutral-500 ">
+                            + 353 875364782
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:w-full lg:px-6 xl:w-6/12">
+                      <div class="flex items-start">
+                        <div class="shrink-0">
+                          <div class="inline-block rounded-md bg-primary-100 p-4 text-[#8B2323]">
+                            <i class="fa-brands text-2xl fa-whatsapp"></i>
+                          </div>
+                        </div>
+                        <div class="ml-6 grow">
+                          <p class="mb-2 font-bold ">
+                          Whatsapp
+                          </p>
+                          <p class="text-neutral-500 ">
+                            sales@example.com
+                          </p>
+                          <p class="text-neutral-500 ">
+                            +1 234-567-89
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-6/12 md:px-3 lg:mb-12 lg:w-full lg:px-6 xl:w-6/12">
+                      <div class="align-start flex">
+                        <div class="shrink-0">
+                          <div class="inline-block rounded-md bg-primary-100 p-4 text-[#8B2323]">
+                            <i class="fa-solid fa-envelope text-2xl"></i>
+                          </div>
+                        </div>
+                        <div class="ml-6 grow">
+                          <p class="mb-2 font-bold ">Email Us</p>
+                          <p class="text-neutral-500 ">
+                            press@example.com
+                          </p>
+                          <p class="text-neutral-500 ">
+                            +1 234-567-89
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:w-full lg:px-6 xl:mb-12 xl:w-6/12">
+                      <div class="align-start flex">
+                        <div class="shrink-0">
+                          <div class="inline-block rounded-md bg-primary-100 p-4 text-[#8B2323]">
+                            <i class="fa-solid fa-mobile text-2xl"></i>
+                          </div>
+                        </div>
+                        <div class="ml-6 grow">
+                          <p class="mb-2 font-bold  ">Social Media</p>
+                          <p class="text-neutral-500 ">
+                            bugs@example.com
+                          </p>
+                          <p class="text-neutral-500 ">
+                            +1 234-567-89
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          
+        </section>
+        <!-- Section: Design Block -->
+      </div>
+
+
+
+
+  </section>
+
+<!-- This is the footer section -->
+<footer class="footer footer-center p-10 pt-10 bg-[#F3F1F2] text-base-content rounded">
+  <nav class="grid grid-flow-col gap-4">
+    <a class="link link-hover">About us</a>
+    <a class="link link-hover">Contact</a>
+    <a class="link link-hover">Jobs</a>
+    <a class="link link-hover">Press kit</a>
+  </nav> 
+  <nav>
+    <div class="grid grid-flow-col gap-4">
+      <a><i class="fa-brands fa-whatsapp  text-2xl"></i></a>
+      <a><i class="fa-brands fa-youtube text-2xl"></i></a>
+      <a><i class="fa-brands fa-facebook  text-2xl"></i></a>
+    </div>
+  </nav> 
+  <aside>
+    <p>Copyright © 2024 - brewcrewcafe.ie</p>
+    <p>Design - James Bellew</p>
+  </aside>
+
+</footer>
+</body>
+</html>
